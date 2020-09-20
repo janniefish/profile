@@ -212,34 +212,41 @@
 	/* Menu                                                                          */
 	/*********************************************************************************/
 
+	#menu{
+		display: flex;
+		flex-direction:column;
+		flex-wrap: nowrap;
+		/* padding: 5%; */
+	}
 
 	#menu hr {
 		color: rgba(255, 255, 255, 0.5);
 		;
-		/* width: "1px"; */
 	}
 
-	#contests {
+	.experience {
 		color: white;
-		/* padding-left: 5%; */
 		text-align: center;
+		justify-content: center;
 	}
 
-	.contests_detail {
+	.experience_detail {
 		display: inline-block;
+		width: 249px;
 	}
 
+	.experience_detail ul li{
+		margin-bottom: 10px;
+	}
 	.icon {
-		/* float: left; */
 		vertical-align: middle;
-		width: 30px;
-		display: inline-block;
+		width: 35px;
+		display: flex;
+		align-items:center;
+		/* display: inline-block; */
+		/* padding: 15px; */
 		/* /* padding-right:30px ; */
 	}
-
-	/* .icon_position {
-		display: table;
-	} */
 
 	#menu p {
 		color: white;
@@ -252,19 +259,33 @@
 		/* width: 30%; */
 	}
 
-	#menu table {
-		width: 100%;
-		/* padding-left: 15%; */
-		color: white;
-		/* display:table; */
-	}
-
-	.detail {
-		width: 70%;
-	}
-
 	.profile {
+		display: flex;
 		text-align: center;
+		justify-content: center;
+		align-items: center;
+		flex-direction:column;
+	}
+
+	.profile_detail{
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		/* justify-content: center; */
+		justify-content: space-between;
+		flex-wrap: wrap-reverse;
+		color: white;
+		width: 249px;
+		margin-bottom: 1em;
+		/* width: 80%; */
+	}
+	.profile_detail ul{
+		align-items: center;
+		margin: 0;
+	}
+
+	.profile_detail ul li{
+		margin-bottom: 10px;
 	}
 
 	/*********************************************************************************/
@@ -414,11 +435,11 @@
 			width: 55%;
 		}
 
-		#menu table {
+		/* #menu table {
 			width: 80%;
 			display: inline-block;
 
 
-		}
+		} */
 
 	}
