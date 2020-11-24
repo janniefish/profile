@@ -212,9 +212,9 @@
 	/* Menu                                                                          */
 	/*********************************************************************************/
 
-	#menu{
+	#menu {
 		display: flex;
-		flex-direction:column;
+		flex-direction: column;
 		flex-wrap: nowrap;
 		/* padding: 5%; */
 	}
@@ -235,14 +235,15 @@
 		width: 249px;
 	}
 
-	.experience_detail ul li{
+	.experience_detail ul li {
 		margin-bottom: 10px;
 	}
+
 	.icon {
 		vertical-align: middle;
 		width: 35px;
 		display: flex;
-		align-items:center;
+		align-items: center;
 		/* display: inline-block; */
 		/* padding: 15px; */
 		/* /* padding-right:30px ; */
@@ -264,10 +265,10 @@
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-		flex-direction:column;
+		flex-direction: column;
 	}
 
-	.profile_detail{
+	.profile_detail {
 		align-items: center;
 		display: flex;
 		flex-direction: row;
@@ -279,14 +280,21 @@
 		margin-bottom: 1em;
 		/* width: 80%; */
 	}
-	.profile_detail ul{
+
+	.profile_detail ul {
 		align-items: center;
 		margin: 0;
 	}
 
-	.profile_detail ul li{
+	.profile_detail ul li {
 		margin-bottom: 10px;
 	}
+
+	.profile_detail>li{
+		display: flex;
+		margin-bottom: 10px;
+		
+	  }
 
 	/*********************************************************************************/
 	/* Page                                                                          */
@@ -416,7 +424,7 @@
 	{
 	} */
 
-	@media only screen and (max-width:620px) {
+	@media only screen and (max-width:800px) {
 		#page {
 			width: 100%;
 		}
@@ -435,11 +443,21 @@
 			width: 55%;
 		}
 
+		.experience_detail{
+			width: 60%;
+		}
+		.profile_detail{
+			width: 60%;
+		}
+
+	}
+
+	@media only screen and (max-width:1000px) {
+
 		/* #menu table {
 			width: 80%;
 			display: inline-block;
 
 
 		} */
-
 	}
